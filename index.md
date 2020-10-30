@@ -14,7 +14,6 @@ Implementing a machine learning algorithm to determine optimal ambient noise lev
 ### Inputs and Tests
 
 - Environmental Input
-
   - Volume and type of sounds
   
 - Machine Learning Input 
