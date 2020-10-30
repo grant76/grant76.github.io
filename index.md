@@ -14,9 +14,10 @@ Implementing a machine learning algorithm to determine optimal ambient noise lev
 ### Inputs and Tests
 
 - Environmental Input
+
   - Volume and type of sounds
   
-- Machine Learning Input: 
+- Machine Learning Input 
   - Magnitude and frequency of ambient noise
   - Movement of participant before and during sleep 
   - Time required to fall asleep
@@ -34,14 +35,14 @@ Implementing a machine learning algorithm to determine optimal ambient noise lev
 
 ### Outputs and Metrics
 
-- Sensor Output: 
-  -Time taken to fall asleep 
+- Sensor Output
+  - Time taken to fall asleep 
   - Frequency and magnitude of movement
   
-- User Output: 
+- User Output
   - Quality of sleep
   
-- ML Output:
+- ML Output
   - Noise level that maximizes quality of sleep
 
 
