@@ -1,3 +1,50 @@
+## Sound Sleep
+
+
+### Project Idea
+
+Studying sound's impact on sleep quality.
+
+
+### Proposal
+
+Implementing a machine learning algorithm to determine optimal ambient noise levels to improve sleep.
+
+
+### Inputs and Tests
+
+- Environmental Input
+  - Volume and type of sounds
+  
+- Machine Learning Input: 
+  - Magnitude and frequency of ambient noise
+  - Movement of participant before and during sleep 
+  - Time required to fall asleep
+  - Sleep quality
+
+
+### Methods and Observations
+
+- Subject individuals to different types of sounds and at different volumes. Research sleep quality papers.  
+- Track individual’s movement through IMU sensors on Arduino Nano 33 BLE Sense.  
+- Measure noise levels of the sleeping environment using Arduino’s microphone.  
+- Use a neural network on Arduino to predict ideal noise levels.  
+- Train the neural network with data collected from the Arduino’s sensors.
+
+
+### Outputs and Metrics
+
+- Sensor Output: 
+  -Time taken to fall asleep 
+  - Frequency and magnitude of movement
+  
+- User Output: 
+  - Quality of sleep
+  
+- ML Output:
+  - Noise level that maximizes quality of sleep
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/grant76/grant76.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
