@@ -5,80 +5,14 @@
 
 Studying sound's impact on sleep quality.
 
+### Project Topic
 
-### Proposal
+The impact of sound on sleep.
 
-Implementing a machine learning algorithm to determine optimal ambient noise levels to improve sleep.
+### Proposal Abstract 
 
+Most adults require seven to nine hours of sleep a day in order to properly function and be alert the very next day. The problem is that according to the CDC, a third of US adults reported getting less than the recommended amount of sleep. Sleep deprivation is linked to chronic diseases and conditions as well as mistakes both small and large. There are many factors that can lead to sleep deprivation, both internal and external factors, but it is difficult to pinpoint the exact cause. The focus of our project is to tackle a very trivial, but common factor that affects everyone - the environment, more specifically sound. Most people can agree that a silent environment is the best environment to sleep in, but the problem is not every environment can be silent. Environmental noise is tough to block out no matter how quiet or loud it can be, especially if the sound is intermittent, so our focus isn’t to try to block it out, but use it to our advantage instead. Studies have shown that sound machines, like those that produce white noise, help people sleep better by moderating intermittent noise levels and providing a constant source of sound for a more peaceful and well-rested sleep. 
 
-### Inputs and Tests
-
-- Environmental Input
-  - Volume and type of sounds
-  
-- Machine Learning Input 
-  - Magnitude and frequency of ambient noise
-  - Movement of participant before and during sleep 
-  - Time required to fall asleep
-  - Sleep quality
+To determine which noise is optimal for sleep we will use a neural network. This network will use data inputs such as noise magnitude and frequency, movement of the individual, and time to fall asleep to track sleep quality.  It will have control over a noise generator to change the ambient sound throughout the night. 
 
 
-### Methods and Observations
-
-- Subject individuals to different types of sounds and at different volumes. Research sleep quality papers.  
-- Track individual’s movement through IMU sensors on Arduino Nano 33 BLE Sense.  
-- Measure noise levels of the sleeping environment using Arduino’s microphone.  
-- Use a neural network on Arduino to predict ideal noise levels.  
-- Train the neural network with data collected from the Arduino’s sensors.
-
-
-### Outputs and Metrics
-
-- Sensor Output
-  - Time taken to fall asleep 
-  - Frequency and magnitude of movement
-  
-- User Output
-  - Quality of sleep
-  
-- ML Output
-  - Noise level that maximizes quality of sleep
-
-
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/grant76/grant76.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/grant76/grant76.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
