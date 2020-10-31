@@ -1,10 +1,6 @@
 ## Sound Sleep
 
 
-### Project Idea
-
-Studying sound's impact on sleep quality.
-
 ### Project Topic
 
 The impact of sound on sleep.
