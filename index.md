@@ -16,3 +16,6 @@ Most adults require seven to nine hours of sleep a day in order to properly func
 To determine which noise is optimal for sleep we will use a neural network. This network will use data inputs such as noise magnitude and frequency, movement of the individual, and time to fall asleep to track sleep quality.  It will have control over a noise generator to change the ambient sound throughout the night. 
 
 
+### Team
+
+Derek Wong and Grant Young
