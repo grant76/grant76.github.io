@@ -44,4 +44,4 @@ Karpathy, A. The Unreasonable Effectiveness of Recurrent Neural Networks (2015).
 
 Olah, C. Understanding LSTM Networks. Understanding LSTM Networks -- colah's blog (2015). Available at: https://colah.github.io/posts/2015-08-Understanding-LSTMs/. (Accessed: 6th November 2020)
 
-Phi, M. Illustrated Guide to LSTM's and GRU's: A step by step explanation. Medium (2020). Available at: https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21. (Accessed: 6th November 2020) 
+Phi, M. Illustrated Guide to LSTM's and GRU's: A step by step explanation. Medium (2020). Available at: [https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21). (Accessed: 6th November 2020) 
