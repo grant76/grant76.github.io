@@ -13,9 +13,25 @@ Derek Wong and Grant Young
 
 ### Proposal Abstract 
 
-Most adults require seven to nine hours of sleep a day in order to properly function and be alert the very next day. The problem is that according to the CDC, a third of US adults reported getting less than the recommended amount of sleep. Sleep deprivation is linked to chronic diseases and conditions as well as mistakes both small and large. There are many factors that can lead to sleep deprivation, both internal and external factors, but it is difficult to pinpoint the exact cause. The focus of our project is to tackle a very trivial, but common factor that affects everyone - the environment, more specifically sound. Most people can agree that a silent environment is the best environment to sleep in, but the problem is not every environment can be silent. Environmental noise is tough to block out no matter how quiet or loud it can be, especially if the sound is intermittent, so our focus isn’t to try to block it out, but use it to our advantage instead. Studies have shown that sound machines, like those that produce white noise, help people sleep better by moderating intermittent noise levels and providing a constant source of sound for a more peaceful and well-rested sleep. 
+Environmental noise is one of the most common and detrimental factors to a horrible night’s rest and is an increasing problem in cities. The issue is environmental noise is impossible to avoid since it exists not only outside the home but inside as well. Instead of trying to avoid it, our project aims to use it to our advantage instead by generating white noise to block out these disturbing noises. By constantly monitoring the environment for sound and by using a neural network to classify certain sounds as disturbing noise, our system is able to playback white noise at an optimal sound level whenever these disturbing noises are detected in order to try to block them out and provide a better night’s rest. 
 
-To predict disturbing noise we will use a neural network, which is a type of machine learning algorithm. This network will use ambient noise as an input to determine if a sound disturbance will occur and its magnitude.  The neural network will be deployed on an embedded microcontroller.  This provides flexibility in the environment where our machine learning model can be used.  The microcontroller will communicate the neural network’s prediction to a noise generator to counteract ambient sound throughout the night. 
+
+### Background
+
+Most adults require seven to nine hours of sleep a day in order to properly function and be alert the very next day. The problem is that according to the CDC, a third of US adults reported getting less than the recommended amount of sleep. Sleep deprivation is linked to chronic diseases and conditions as well as mistakes both small and large. There are many factors that can lead to sleep deprivation, both internal and external factors, but it is difficult to pinpoint the exact cause. The focus of our project is to tackle a very trivial, but common factor that affects everyone - the environment, more specifically noise. 
+
+Most people can agree that a silent environment is the best environment to sleep in, but the problem is not every environment can be silent. Environmental noise ranges from cars outside your window to conversations between people in your house. Environmental noise is tough to block out and it is even worse during sleep. Studies have shown that during sleep, environmental noise can negatively affect your sleep quality by reducing the number of deep sleep cycles and the amount of time spent in the deep sleep cycle. As a result, you end up spending more time in the more shallow sleep stages. This is due to biological responses, like increased adrenaline and cortisol levels as well as elevated heart rates (Halperin, 2014).  The worst part? You don’t even know it is happening until after the horrible night. 
+
+In an article by Afshar et al, they conducted research about how white noise affects patients in the coronary care unit (Afshar, et al, 2016). The combination of conversations, telephones, alarms, electronic and medical devices, and other miscellaneous environmental sounds produced noise intensities that ranged from 59 to 90 dB. Using a self-rated sleep assessment test called the Pittsburgh Sleep Quality Index (PSQI), patients were asked to rate their sleep quality before and after the usage of a white noise machine. The PSQI scores have a range from 0 to 21. Before the usage of a white noise machine, the average score was 5.17 with a standard deviation of 1.66. After the usage of a white noise machine played at an intensity of around 40-50 dB, the average score increased to a staggering 11.23 with a standard deviation of 2.30. Because of these findings, the authors concluded the article by recommending the usage of a white noise machine in order to mask environmental noise and improve sleep. 
+
+
+### Solution
+
+Our focus isn’t to try to block environmental noise out, but instead use it to our advantage. Studies have shown that sound machines, like those that produce white noise, help people sleep better by moderating intermittent noise levels and providing a constant source of sound at an optimal sound level for a more peaceful and well-rested sleep. 
+
+Our system would consist of a microcontroller that’s constantly monitoring the ambient noise using a microphone as well as outputting white noise using a speaker when disturbing noises are detected. Since the acoustics of a room differ from room to room, there will be a feedback loop in order to output the white noise at an optimal sound level. Whether a noise is considered disturbing or not will be up to a neural network. The user will be able to interact with our system using a mobile device via Bluetooth. The user will be able to adjust the system to their liking, for example changing the type of noise that’s played by our system. 
+
+To predict disturbing noise we will use a neural network, which is a type of machine learning algorithm. This network will use ambient noise as an input to determine if a sound disturbance will occur and its magnitude.  The neural network will be deployed on an embedded microcontroller.  This provides flexibility in the environment where our machine learning model can be used.  The microcontroller will communicate the neural network’s prediction to a noise generator to counteract ambient sound throughout the night.
 
 
 ### Machine Learning
@@ -29,21 +45,41 @@ The output of our LSTM will be the prediction of the volume of ambient sound in 
 
 ### Timeline and Deliverables
 
-Week 5:  Write software for LSTM.  Find datasets to train the model.
+Week 5:  
+Write software for LSTM.  
+Find datasets to train the model.
+Research and finalize total hardware system design.
+Research human-computer interaction.
 
-Week 6:  Gather more data using Arduino.  Continue writing LSTM software.
+Week 6:  
+Gather more data using Arduino.  
+Continue writing LSTM software.
+Write software for hardware integration.
 
-Week 7:  Train and tune the LSTM using training and validation data.
+Week 7:  
+Train and tune the LSTM using training and validation data.
 Test model for accuracy. 
+Write software for human-computer interaction.
   
-Week 8:  Continue to train, tune, and test as necessary.  Convert the model and deploy it on our embedded system.
+Week 8:  
+Continue to train, tune, and test as necessary.  
+Convert the model and deploy it on our embedded system.
 
-Week 9:  Test the whole system that includes Arduino sensor, LSTM, and smart phone application.
+Week 9:  
+Test the whole system:
+LSTM model deployment on Arduino
+Hardware integration
+Human-computer interaction integration
 
 Week 10:  Finalize system.
 
 
+
 #### References
+
+Farokhnezhad Afshar, P., Bahramnezhad, F., Asgari, P. & Shiri, M. Effect of White Noise on Sleep in Patients Admitted to a Coronary Care. Journal of caring sciences (2016). Available at: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4923834/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4923834/). (Accessed: 3rd November 2020) 
+
+Halperin, D. Environmental noise and sleep disturbances: A threat to health? Sleep science (Sao Paulo, Brazil) (2014). Available at: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4608916/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4608916/). (Accessed: 3rd November 2020) 
 
 Jeyakumar, J. V. Rec 2020 11 02. YouTube (2020). Available at: [https://www.youtube.com/watch?v=PKApMIci91Q](https://www.youtube.com/watch?v=PKApMIci91Q). (Accessed: 6th November 2020) 
 
